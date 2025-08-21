@@ -50,11 +50,27 @@ int main() {
 	Pirate_Cove = Foxy;
 
 	//Basic Setup
+	std::string Current_View;
+	Current_View = "Office";
 	if (StartGame == "True") {
-		std::string Current_Veiw = "Office";
-		std::cout << "Currently viewing: " << Current_Veiw << std::endl;
-		std::string Set_Room;
-		std::cout << "Go to what room:";
-		std::cin >> Set_Room;
+
+		//Choose Room Functionallity
+		while (true) {
+			std::cout << "Currently viewing: " << Current_View << std::endl;
+			std::string Set_Room;
+			std::cout << "Go to what room: ";
+			std::cin >> Set_Room;
+			system("cls");
+			//Veiw Kitchen
+			if (Set_Room == "kitchen") {
+				Set_Room = "Kitchen";
+				Current_View = "Kitchen";
+			}
+			//Veiw Show Stage
+			if (Set_Room == "stage") {
+				Set_Room = "Show Stage";
+				Current_View = "Show Stage";
+			}
+		}
 	}
 }
