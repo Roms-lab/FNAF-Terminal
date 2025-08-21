@@ -38,4 +38,14 @@ int main() {
 		StartGame = "True";
 		//Clear Screen & Set StartGame To True. AINT DOING A TON OF CODE FOR IT TO BE ONE LINE.
 		system("cls");
+	}
+	//Set all animatronics to their usual areas
+	Bonnie = "Show Stage";
+	Freddy = "Show Stage";
+	Chica = "Show Stage";
+	Foxy = "Pirate Cove";
+
+	//Set all rooms with their corresponding animatronics
+	Show_Stage = Bonnie, Freddy, Chica;
+	Pirate_Cove = Foxy;
 }
