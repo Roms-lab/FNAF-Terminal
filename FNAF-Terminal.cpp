@@ -48,4 +48,13 @@ int main() {
 	//Set all rooms with their corresponding animatronics
 	Show_Stage = Bonnie, Freddy, Chica;
 	Pirate_Cove = Foxy;
+
+	//Basic Setup
+	if (StartGame == "True") {
+		std::string Current_Veiw = "Office";
+		std::cout << "Currently viewing: " << Current_Veiw << std::endl;
+		std::string Set_Room;
+		std::cout << "Go to what room:";
+		std::cin >> Set_Room;
+	}
 }
