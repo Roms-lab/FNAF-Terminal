@@ -17,17 +17,25 @@ int main() {
 	std::string Right_Office_Door = "None";
 	std::string Left_Office_Door = "None";
 
+	//Make all animatronics as variables
+	std::string Bonnie = "No Room";
+	std::string Chica = "No Room";
+	std::string The_Cupcake = "No Room";
+	std::string Foxy = "No Room";
+	std::string Freddy = "No Room";
+	std::string Golden_Freddy = "No Room";
+
 	//Start Game Logic
 	std::string StartGame = "False";
 	std::cout << "Start Game?" << std::endl;
 	std::cin >> StartGame;
 	if (StartGame == "Y") {
 		StartGame = "True";
-		//Clear Screen & Start Game
+		//Clear Screen & Set StartGame To True
 		system("cls");
 	}
 	if (StartGame == "y") {
-		//Clear Screen & Start Game. AINT DOING A TON OF CODE FOR IT TO BE ONE LINE.
+		StartGame = "True";
+		//Clear Screen & Set StartGame To True. AINT DOING A TON OF CODE FOR IT TO BE ONE LINE.
 		system("cls");
-	}
 }
