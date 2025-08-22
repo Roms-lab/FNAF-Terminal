@@ -46,18 +46,27 @@ int main() {
 	Foxy = "Pirate Cove";
 
 	//Set all rooms with their corresponding animatronics
-	Show_Stage = Bonnie, Freddy, Chica;
-	Pirate_Cove = Foxy;
+	Show_Stage = "Bonnie, Chica, Freddy";
+	Pirate_Cove = "Foxy";
 
 	//Basic Setup
 	std::string Current_View;
+	std::string Current_Animatronics;
+	Current_Animatronics = "None";
 	Current_View = "Office";
 	if (StartGame == "True") {
+		std::string Set_Room;
 
 		//Choose Room Functionallity
 		while (true) {
+			if (Set_Room == "Show Stage") {
+				Current_Animatronics = Show_Stage;
+			}
+			if (Set_Room == "Pirate Cove") {
+				Current_Animatronics = Pirate_Cove;
+			}
+			std::cout << "Animatronics in room: " << Current_Animatronics << std::endl;
 			std::cout << "Currently viewing: " << Current_View << std::endl;
-			std::string Set_Room;
 			std::cout << "Go to what room: ";
 			std::cin >> Set_Room;
 			system("cls");
