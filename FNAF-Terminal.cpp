@@ -61,15 +61,65 @@ int main() {
 			std::cout << "Go to what room: ";
 			std::cin >> Set_Room;
 			system("cls");
-			//Veiw Kitchen
+			//View Kitchen
 			if (Set_Room == "kitchen") {
 				Set_Room = "Kitchen";
 				Current_View = "Kitchen";
 			}
-			//Veiw Show Stage
+			//View Show Stage
 			if (Set_Room == "stage") {
 				Set_Room = "Show Stage";
 				Current_View = "Show Stage";
+			}
+			//View Pirate Cove
+			if (Set_Room == "cove") {
+				Set_Room = "Pirate Cove";
+				Current_View = "Pirate Cove";
+			}
+			//View Restrooms
+			if (Set_Room == "restroom") {
+				Set_Room = "Restrooms";
+				Current_View = "Restrooms";
+			}
+			//View Dining Area
+			if (Set_Room == "dining") {
+				Set_Room = "Dining Area";
+				Current_View = "Dining Area";
+			}
+			//View West Hall
+			if (Set_Room == "westhall") {
+				Set_Room = "West Hall";
+				Current_View = "West Hall";
+			}
+			//View East Hall
+			if (Set_Room == "easthall") {
+				Set_Room = "East Hall";
+				Current_View = "East Hall";
+			}
+			//View West Hall Corner
+			if (Set_Room == "westcorner") {
+				Set_Room = "West Hall Corner";
+				Current_View = "West Hall Corner";
+			}
+			//View East Hall Corner
+			if (Set_Room == "eastcorner") {
+				Set_Room = "East Hall Corner";
+				Current_View = "East Hall Corner";
+			}
+			//View Backstage
+			if (Set_Room == "backstage") {
+				Set_Room = "Backstage";
+				Current_View = "Backstage";
+			}
+			//View Supply Closet
+			if (Set_Room == "supply") {
+				Set_Room = "Supply Closet";
+				Current_View = "Supply Closet";
+			}
+			//View Office
+			if (Set_Room == "office") {
+				Set_Room = "Office";
+				Current_View = "Office";
 			}
 		}
 	}
