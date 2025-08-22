@@ -44,10 +44,22 @@ int main() {
 	Freddy = "Show Stage";
 	Chica = "Show Stage";
 	Foxy = "Pirate Cove";
+	Golden_Freddy = "Hidden :o";
 
 	//Set all rooms with their corresponding animatronics
 	Show_Stage = "Bonnie, Chica, Freddy";
+	Kitchen = "None";
 	Pirate_Cove = "Foxy";
+	Restrooms = "None";
+	Dining_Area = "None";
+	West_Hall = "None";
+	East_Hall = "None";
+	West_Hall_Corner = "None";
+	East_Hall_Corner = "None";
+	Backstage = "None";
+	Supply_Closet = "None";
+	Right_Office_Door = "Right Door: None ";
+	Left_Office_Door = "Left Door: None";
 
 	//Basic Setup
 	std::string Current_View;
@@ -59,11 +71,42 @@ int main() {
 
 		//Choose Room Functionallity
 		while (true) {
+			//Not explaining all this ToT
 			if (Set_Room == "Show Stage") {
 				Current_Animatronics = Show_Stage;
 			}
-			if (Set_Room == "Pirate Cove") {
+			else if (Set_Room == "Kitchen") {
+				Current_Animatronics = Kitchen;
+			}
+			else if (Set_Room == "Pirate Cove") {
 				Current_Animatronics = Pirate_Cove;
+			}
+			else if (Set_Room == "Restrooms") {
+				Current_Animatronics = Restrooms;
+			}
+			else if (Set_Room == "Dining Area") {
+				Current_Animatronics = Dining_Area;
+			}
+			else if (Set_Room == "West Hall") {
+				Current_Animatronics = West_Hall;
+			}
+			else if (Set_Room == "East Hall") {
+				Current_Animatronics = East_Hall;
+			}
+			else if (Set_Room == "West Hall Corner") {
+				Current_Animatronics = West_Hall_Corner;
+			}
+			else if (Set_Room == "East Hall Corner") {
+				Current_Animatronics = West_Hall_Corner;
+			}
+			else if (Set_Room == "Backstage") {
+				Current_Animatronics = Backstage;
+			}
+			else if (Set_Room == "Supply Closet") {
+				Current_Animatronics = Supply_Closet;
+			}
+			else if (Set_Room == "Office") {
+				Current_Animatronics = Right_Office_Door + Left_Office_Door;
 			}
 			std::cout << "Animatronics in room: " << Current_Animatronics << std::endl;
 			std::cout << "Currently viewing: " << Current_View << std::endl;
